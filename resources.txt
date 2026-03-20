@@ -1,0 +1,46 @@
+Resources Required to Run Course Calendar Project
+=====================================================
+
+1. Software Requirements
+------------------------
+- XAMPP or WAMP (for Windows) 
+  - Includes Apache (Web Server)
+  - Includes MySQL/MariaDB (Database Server)
+  - Includes PHP (Server-side scripting language)
+
+- Web Browser (Google Chrome, Firefox, or Edge)
+
+2. Programming Languages and Technologies
+-----------------------------------------
+- PHP 7.4 or higher
+- MySQL 5.7 or higher (MariaDB compatible)
+- HTML5
+- CSS3
+- JavaScript (vanilla, no external libraries required)
+
+3. Dependencies
+---------------
+- No external PHP libraries or frameworks are required.
+- The project runs with core PHP and MySQL.
+
+4. Setup Instructions
+---------------------
+1. Copy project folder to your web server root:
+   - For XAMPP: `C:\xampp\htdocs\course_calendar\course_calendar`
+   
+
+2. Import `course_calendar.sql` into MySQL:
+   - Open phpMyAdmin → Create database `course_calendar` → Import `course_calendar.sql`.
+
+3. Update database connection if needed:
+   - Open `connection.php`
+   - Edit: `$host`, `$user`, `$pass`, `$db`.
+
+4. Run the project:
+   - Open browser → Go to `http://localhost/course_calendar/course_calendar/index.php`
+
+5. Notes
+--------
+- All tables are normalized to 3NF.
+- Sample data included in `course_calendar.sql` so calendar displays events on first run.
+- No extra installation needed beyond XAMPP/WAMP
